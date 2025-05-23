@@ -18,9 +18,10 @@ A simplified full-stack task management system inspired by Trello — built with
 
 ## 🔧 Tech Stack
 
-| Frontend            | Backend             | Database |
-|---------------------|---------------------|----------|
-| React + Context API | Node.js + Express   | MongoDB  |
+| Frontend         | Backend           | Database |
+|------------------|-------------------|----------|
+| React + Redux    | Node.js + Express | MongoDB  |
+
 
 ---
 
