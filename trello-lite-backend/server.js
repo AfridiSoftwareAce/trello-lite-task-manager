@@ -17,14 +17,17 @@ app.use((err, req, res, next) => {
 
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3001',  
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 app.use("/api", authRoutes);
 app.use("/api", taskRoutes);
 
 
 
-// Routes (we'll add actual routes in Part 3)
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
